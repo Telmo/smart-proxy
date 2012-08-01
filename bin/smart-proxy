@@ -39,7 +39,7 @@ class SmartProxy < Sinatra::Base
 
   begin
     require "facter"
-    require "facts_api" 
+    require "facts_api"
   rescue LoadError
     warn "Facter was not found, Facts API disabled"
   end
